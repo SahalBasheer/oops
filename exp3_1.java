@@ -1,7 +1,7 @@
 //1. Program to create a student class with name, roll no and marks of five subjects. Write functions to read and display the details.
 import java.util.*;
 
-class exp3_1
+public class exp3_1
 {
  public static void main(String args[])
  {
@@ -11,15 +11,15 @@ class exp3_1
   int m[]=new int[5];
   Scanner obj = new Scanner(System.in);
   System.out.print("Enter name of student: ");
-  n = in.nextLine();
+  n = obj.nextLine();
   System.out.print("Enter class of student: ");
-  c = in.nextInt();
+  c = obj.nextInt();
   System.out.print("Enter roll no of student: ");
-  r = in.nextInt();
+  r = obj.nextInt();
   for(i=0;i<5;i++)
   {
    System.out.print("Enter marks in 1st subject"+i+": ");
-   m[i] = in.nextInt();
+   m[i] = obj.nextInt();
    t = t + m[i] ;
   }
   p = t / 500.0 * 100.0;
