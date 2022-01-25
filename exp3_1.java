@@ -6,8 +6,7 @@ public class exp3_1
  public static void main(String args[])
  {
   String n,g;
-  int c,r,t=0,i;
-  double p;
+  int c,r,t=0,i,a;
   int m[]=new int[5];
   Scanner obj = new Scanner(System.in);
   System.out.print("Enter name of student: ");
@@ -22,24 +21,24 @@ public class exp3_1
    m[i] = obj.nextInt();
    t = t + m[i] ;
   }
-  p = t / 500.0 * 100.0;
-  if (p >= 90)
+  a = t / 5 ;
+  if (a >= 90)
       g = "A";
-  else if (p >= 80)
+  else if (a >= 80)
            g = "B";
-  else if (p >=70)
+  else if (a >=70)
            g = "C";
-  else if (p >= 60)
+  else if (a >= 60)
            g = "D";
-  else if (p >= 50)
+  else if (a >= 50)
            g = "E";
-  else if (p >= 40)
+  else if (a >= 40)
            g = "P";
   else
       g = "F";
-            
+  System.out.println("\nName = " + n);
+   System.out.println("Class = " + c);
   System.out.println("Total Marks = " + t);
-  System.out.println("Percentage = " + p);
   System.out.println("Grade = " + g);
  }
 }
