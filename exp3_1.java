@@ -18,7 +18,7 @@ public class exp3_1
   r = obj.nextInt();
   for(i=0;i<5;i++)
   {
-   System.out.print("Enter marks in 1st subject"+i+": ");
+   System.out.print("Enter marks in subject"+(i+1)+": ");
    m[i] = obj.nextInt();
    t = t + m[i] ;
   }
